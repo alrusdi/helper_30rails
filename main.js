@@ -24,6 +24,7 @@ var app = new Vue({
             }
         },
         next_round: function () {
+            this.right_dice_rot = 0;
             if (this.turns_count >= 30) {
                 alert("Game over!");
                 return;
