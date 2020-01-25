@@ -13,9 +13,19 @@ var app = new Vue({
       "left_dice_val": 1,
       "right_dice_val" : 3,
       "turns_count": 0,
-      "right_dice_rot": 0
+      "right_dice_rot": 0,
+      "left_dice_rot": 0
     },
     methods: {
+        roll_left_die: function () {
+            if (this.turns_count > 0) return;
+            this.left_dice_rot = 1;
+            var that = this;
+            setTimeout(function() {
+                that.left_dice_rot = 0;
+                that.left_dice_val = rand();
+            }, 500)
+        },
         rotate: function () {
             if (this.right_dice_rot == 3) {
                 this.right_dice_rot = 0;

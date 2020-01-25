@@ -54,6 +54,15 @@
     transform: rotate(270deg);
 }
 
+.left_dice_rot0 {
+    transform: rotate(0) scale(1.0, 1.0);
+
+}
+
+.left_dice_rot1 {
+    transform: rotate(45deg) scale(0.7, 0.7); 
+}
+
 .left_dice_val1 {
     background-position: -33px -34px;
 }

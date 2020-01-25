@@ -15,7 +15,7 @@
         <div class="cont" id="app">
             <div class="left_col">
                 <div class="left_die_cont">
-                    <div class="left_dice" :class="'left_dice_val'+left_dice_val"></div>    
+                    <div v-on:click="roll_left_die()" class="left_dice" :class="'left_dice_val'+left_dice_val+' left_dice_rot'+left_dice_rot"></div>    
                 </div>
             </div>
             <div class="center_col">
