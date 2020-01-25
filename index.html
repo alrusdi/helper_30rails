@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>30 Rails dice roller</title>
+        <meta name="description" content="30 rails dice roller">
+        <meta name="author" content="Alrusdi">
+
+        <link rel="stylesheet" href="./styles.css?v=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    </head>
+    <body>
+        <div class="cont" id="app">
+            <div class="left_col">
+                <div class="left_die_cont">
+                    <div class="left_dice" :class="'left_dice_val'+left_dice_val"></div>    
+                </div>
+            </div>
+            <div class="center_col">
+                <div class="right_die_cont">
+                    <div v-on:click="rotate()" class="right_dice" :class="'right_dice_val'+right_dice_val+' right_dice_rot'+right_dice_rot"></div>    
+                </div>
+            </div>
+            <div class="right_col">
+                <div class="actions_cont">
+                    <button class="action_roll" v-on:click="next_round()">Next round!</button>
+                    <div class="action_turns_cont">
+                        Turns<br><label>{{ turns_count }}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>

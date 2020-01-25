@@ -1,0 +1,103 @@
+.cont {
+    width: 660px;
+    height: 200px;
+}
+
+.actions_cont {
+    padding-top: 20px;
+    text-align: center;
+}
+.actions_cont label {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.action_roll {
+    height: 60px;
+    font-size: 20px;
+}
+
+.action_turns_cont {
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+.left_col, .center_col, .right_col {
+    display: inline-block;
+    width: 210px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.left_dice, .right_dice {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-image: url(./dices_map.png);
+    background-repeat: no-repeat;
+    background-size: 1656px;
+}
+
+.right_dice_rot0 {
+    transform: rotate(0);
+}
+
+.right_dice_rot1 {
+    transform: rotate(90deg);
+}
+
+.right_dice_rot2 {
+    transform: rotate(180deg);
+}
+
+.right_dice_rot3 {
+    transform: rotate(270deg);
+}
+
+.left_dice_val1 {
+    background-position: -33px -34px;
+}
+
+.left_dice_val2 {
+    background-position: -260px -34px;
+}
+
+.left_dice_val3 {
+    background-position: -491px -34px;
+}
+
+.left_dice_val4 {
+    background-position: -721px -34px;;
+}
+
+.left_dice_val5 {
+    background-position: -951px -34px;
+}
+
+.left_dice_val6 {
+    background-position: -1310px -34px;
+}
+
+.right_dice_val1 {
+    background-position: -26px -260px;
+}
+
+.right_dice_val2 {
+    background-position: -256px -260px;
+}
+
+.right_dice_val3 {
+    background-position: -487px -260px;
+}
+
+.right_dice_val4 {
+    background-position: -717px -260px;
+}
+
+.right_dice_val5 {
+    background-position: -946px -260px;
+}
+
+.right_dice_val6 {
+    background-position: -1177px -260px;
+}
